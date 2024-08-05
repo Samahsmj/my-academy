@@ -130,16 +130,25 @@ h2, h3, p, ul, li {
 }
 
 @media (max-width: 576px) {
+    h2, h3, p, ul, li {
+        font-size: 0.9rem;
+        margin: 5px 0;
+    }
+
+    .instruction {
+        font-size: 0.9rem;
+    }
+
     .gallery-item {
         margin-bottom: 20px;
     }
 
     .gallery-item h3 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .gallery-item p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .modal-content {
@@ -163,6 +172,35 @@ h2, h3, p, ul, li {
 
     #main-buttons {
         padding: 15px 0;
+    }
+
+    .section-about,
+    .section-why-us,
+    .section-services,
+    .section-testimonials,
+    .section-contact,
+    .section-gallery,
+    .section-why-us-specialist,
+    .section-skills-wanted,
+    .section-specialist-testimonials,
+    .section-contact-specialist {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-about > *,
+    .section-why-us > *,
+    .section-services > *,
+    .section-testimonials > *,
+    .section-contact > *,
+    .section-gallery > *,
+    .section-why-us-specialist > *,
+    .section-skills-wanted > *,
+    .section-specialist-testimonials > *,
+    .section-contact-specialist > * {
+        width: 100%;
+        margin: 5px 0;
     }
 }
 
