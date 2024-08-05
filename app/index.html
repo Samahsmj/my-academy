@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أكاديمية أسامة التعليمية</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <img src="image.png" alt="شعار أكاديمية أسامة التعليمية" class="logo animated fadeInDown">
+        <h1 class="animated fadeInDown">أكاديمية أسامة التعليمية</h1>
+    </header>
+
+    <div id="main-buttons" class="container text-center mt-5 animated fadeIn">
+        <a href="student.html" class="btn btn-primary btn-lg mb-4">طالب</a>
+        <a href="job-seeker.html" class="btn btn-secondary btn-lg mb-4">باحث عن عمل</a>
+        <p class="instruction mt-3">اضغط على أحد الأزرار لاختيار القسم</p>
+    </div>
+
+    <button id="back-to-choose" class="btn btn-dark fixed-bottom mb-5 ml-3" onclick="goBack()">العودة للاختيار</button>
+    <button id="back-to-top" class="btn btn-dark fixed-bottom mb-3 ml-3"><i class="fas fa-arrow-up"></i> الرجوع إلى الأعلى</button>
+</body>
+
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 أكاديمية أسامة التعليمية. جميع الحقوق محفوظة.</p>
+</footer>
+
+<script>
+    function goBack() {
+        window.location.href = 'index.html';
+    }
+
+    window.onscroll = function() {
+        const button = document.getElementById('back-to-top');
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+    document.getElementById('back-to-top').addEventListener('click', scrollToTop);
+</script>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قسم الباحثين عن عمل - أكاديمية أسامة التعليمية</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <img src="image.png" alt="شعار أكاديمية أسامة التعليمية" class="logo animated fadeInDown">
+        <h1 class="animated fadeInDown">أكاديمية أسامة التعليمية</h1>
+    </header>
+
+    <div id="specialists-section" class="container animated fadeIn">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button class="btn btn-link nav-link" onclick="toggleSection('why-choose-us-specialist')">لماذا تختار الأكاديمية للعمل</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-link nav-link" onclick="toggleSection('skills-wanted-specialist')">المهارات المطلوبة</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-link nav-link" onclick="toggleSection('specialist-testimonials')">شهادات المختصين</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-link nav-link" onclick="toggleSection('contact-specialist')">تواصل معنا</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-link nav-link" onclick="openFeedbackForm()">أعطنا رأيك</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <p class="instruction text-center mt-3">اضغط على الأزرار لعرض المعلومات</p>
+
+        <section id="why-choose-us-specialist" class="container mt-4 hidden section-why-us-specialist">
+            <h2>لماذا تختار الأكاديمية للعمل</h2>
+            <p>تعتبر أكاديمية أسامة التعليمية بيئة مثالية للعمل لكل من يمتلك المهارات والخبرة المطلوبة. نحن نؤمن بأن النجاح يتحقق من خلال فريق عمل متميز ومحترف. إليك بعض الأسباب التي تجعلك تختار العمل في أكاديميتنا:</p>
+            <ul>
+                <li>بيئة عمل محفزة: نحن نوفر بيئة عمل تحفز على الابتكار والإبداع، حيث يمكن للموظفين تطوير مهاراتهم والمساهمة في تحقيق أهداف الأكاديمية.</li>
+                <li>تطوير مستمر: نسعى دائمًا لتطوير موظفينا من خلال توفير برامج تدريبية ودورات تعليمية تساعدهم على تحسين مهاراتهم ومعرفتهم.</li>
+                <li>ثقافة الفريق: نؤمن بأهمية العمل الجماعي والتعاون بين أعضاء الفريق لتحقيق النجاح المشترك.</li>
+                <li>مرونة في العمل: نقدم بيئة عمل مرنة تتيح للموظفين التوازن بين حياتهم المهنية والشخصية.</li>
+                <li>التقدير والتحفيز: نقدر جهود موظفينا ونسعى لتحفيزهم من خلال مكافآت وحوافز مميزة تقديراً لإنجازاتهم.</li>
+                <li>فرص النمو: نؤمن بقدرات موظفينا ونسعى لتقديم فرص نمو وتطور وظيفي داخل الأكاديمية.</li>
+                <li>قيم أخلاقية: نحن نلتزم بقيم أخلاقية عالية ونسعى لبناء بيئة عمل محترمة وداعمة للجميع.</li>
+                <li>عدم الحاجة للشهادات: نحن نؤمن بأن المهارات والخبرات هي الأساس في تحقيق النجاح، ولذلك لا نطلب أي شهادات أكاديمية للالتحاق بفريق العمل لدينا. ما يهمنا هو قدرتك على الأداء والتميز في المهام المطلوبة.</li>
+            </ul>
+        </section>
+
+        <section id="skills-wanted-specialist" class="hidden container mt-4 section-skills-wanted">
+            <h2>المهارات المطلوبة</h2>
+            <ul>
+                <li>استخدام تطبيقات الحاسب بسهولة ومهارة:
+                    <ul>
+                        <li>إتقان استخدام برامج Microsoft Office (Word, Excel, PowerPoint).</li>
+                        <li>القدرة على استخدام برامج التحرير والتصميم مثل Adobe Photoshop وIllustrator.</li>
+                        <li>معرفة جيدة بتطبيقات إدارة المشاريع مثل Trello وAsana.</li>
+                    </ul>
+                </li>
+                <li>التميز في المواد الجامعية العلمية والإسلامية والثقافية:
+                    <ul>
+                        <li>المواد العلمية: الفيزياء، الكيمياء، الرياضيات، الأحياء.</li>
+                        <li>المواد الإسلامية: الفقه، التفسير، الحديث، العقيدة.</li>
+                        <li>المواد الثقافية: الأدب العربي، التاريخ، الجغرافيا.</li>
+                    </ul>
+                </li>
+                <li>استخدام أدوات الذكاء الاصطناعي بذكاء ومهارة:
+                    <ul>
+                        <li>القدرة على استخدام منصات التعلم الآلي مثل TensorFlow وPyTorch.</li>
+                        <li>معرفة جيدة بأدوات تحليل البيانات مثل Python وR.</li>
+                        <li>القدرة على التعامل مع أدوات الذكاء الاصطناعي المستخدمة في التعليم مثل ChatGPT وGPT-4.</li>
+                    </ul>
+                </li>
+                <li>مهارات البرمجة:
+                    <ul>
+                        <li>إتقان لغات البرمجة مثل Python، Java، C++، JavaScript.</li>
+                        <li>القدرة على تطوير وبرمجة التطبيقات التعليمية.</li>
+                        <li>معرفة بأساسيات تطوير المواقع واستخدام أطر العمل مثل Django وReact.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>إذا كنت تمتلك المهارات والخبرة المطلوبة وترغب في العمل في بيئة تعليمية متميزة، فإن أكاديمية أسامة التعليمية هي المكان المناسب لك. انضم إلينا وساهم في تحقيق رؤيتنا وتقديم أفضل الخدمات التعليمية للطلاب.</p>
+        </section>
+
+        <section id="specialist-testimonials" class="hidden container mt-4 section-specialist-testimonials">
+            <h2>شهادات المختصين</h2>
+            <div id="testimonials-list-specialist">
+                <div class="testimonial card mb-3">
+                    <div class="card-body">
+                        <p class="card-text">“العمل في أكاديمية أسامة أتاح لي الفرصة لتطوير مهاراتي بشكل كبير.” - محمد</p>
+                    </div>
+                </div>
+                <div class="testimonial card mb-3">
+                    <div class="card-body">
+                        <p class="card-text">“بيئة العمل هنا مشجعة وداعمة للغاية.” - ليلى</p>
+                    </div>
+                </div>
+                <div class="testimonial card mb-3">
+                    <div class="card-body">
+                        <p class="card-text">“أكاديمية أسامة تهتم بموظفيها وتوفر لهم كل الدعم اللازم.” - خالد</p>
+                    </div>
+                </div>
+                <div class="testimonial card mb-3">
+                    <div class="card-body">
+                        <p class="card-text">“أشعر بالفخر لكوني جزء من فريق أكاديمية أسامة.” - نورة</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-specialist" class="hidden container mt-4 section-contact-specialist">
+            <h2>تواصل معنا</h2>
+            <p>للتواصل عبر الواتساب: <a href="https://wa.me/message/IR63CBWWEEPFO1" class="contact-link">اضغط هنا</a></p>
+            <p>لمتابعة التحديثات، تابعنا على الانستغرام: <a href="https://www.instagram.com/0s1_m1academy?igshid=M3d0OTlhbWdkdWQ5" class="contact-link">اضغط هنا</a></p>
+        </section>
+
+        <button class="btn btn-dark fixed-bottom mb-5 ml-3" id="go-back-button-specialists" onclick="goBack()">العودة للاختيار</button>
+        <button class="btn btn-dark fixed-bottom mb-3 ml-3" id="back-to-top"><i class="fas fa-arrow-up"></i> الرجوع إلى الأعلى</button>
+    </div>
+
+    <div id="feedback-form" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeFeedbackForm()">&times;</span>
+            <h2>أعطنا رأيك</h2>
+            <form id="feedback-form-content" onsubmit="submitFeedback(event)">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+                <label for="feedback">رأيك:</label>
+                <textarea id="feedback" name="feedback" class="form-control" required></textarea>
+                <button type="submit" class="btn btn-primary mt-2">إرسال</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="feedback-alert" class="alert alert-success hidden" role="alert">
+        تم إرسال رأيك بنجاح!
+    </div>
+
+</body>
+
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 أكاديمية أسامة التعليمية. جميع الحقوق محفوظة.</p>
+</footer>
+
+<script>
+    function toggleSection(id) {
+        document.querySelectorAll('section').forEach(section => {
+            if (section.id === id) {
+                section.classList.remove('hidden');
+                section.style.display = 'block';
+                $('html, body').animate({ scrollTop: $('#' + id).offset().top }, 500);
+                if (id.includes('gallery') || id.includes('presentation')) {
+                    document.querySelectorAll('.fixed-button').forEach(button => button.classList.add('visible'));
+                    document.getElementById('go-back-button-specialists').classList.remove('visible');
+                } else {
+                    document.querySelectorAll('.fixed-button').forEach(button => button.classList.remove('visible'));
+                    document.getElementById('go-back-button-specialists').classList.add('visible');
+                }
+            } else {
+                section.classList.add('hidden');
+                section.style.display = 'none';
+            }
+        });
+    }
+
+    function openFeedbackForm() {
+        document.getElementById('feedback-form').classList.remove('hidden');
+        document.getElementById('feedback-form').style.display = 'block';
+    }
+
+    function closeFeedbackForm() {
+        document.getElementById('feedback-form').classList.add('hidden');
+        document.getElementById('feedback-form').style.display = 'none';
+    }
+
+    function submitFeedback(event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        const feedback = document.getElementById('feedback').value;
+        const testimonialsList = document.getElementById('testimonials-list-specialist');
+
+        const newTestimonial = document.createElement('div');
+        newTestimonial.classList.add('testimonial', 'card', 'mb-3');
+        newTestimonial.innerHTML = `<div class="card-body"><p class="card-text">“${feedback}” - ${name}</p></div>`;
+
+        testimonialsList.appendChild(newTestimonial);
+        closeFeedbackForm();
+
+        const alert = document.getElementById('feedback-alert');
+        alert.classList.remove('hidden');
+        alert.style.display = 'block';
+        setTimeout(() => {
+            alert.classList.add('hidden');
+            alert.style.display = 'none';
+        }, 3000);
+    }
+
+    function goBack() {
+        window.location.href = 'index.html';
+    }
+
+    window.onload = function() {
+        const sections = ['why-choose-us-specialist', 'skills-wanted-specialist', 'specialist-testimonials', 'contact-specialist'];
+        sections.forEach(section => document.getElementById(section).classList.add('hidden'));
+    }
+
+    window.onscroll = function() {
+        const button = document.getElementById('back-to-top');
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+    document.getElementById('back-to-top').addEventListener('click', scrollToTop);
+</script>
+</html>

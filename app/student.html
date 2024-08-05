@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قسم الطلاب - أكاديمية أسامة التعليمية</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <img src="image.png" alt="شعار أكاديمية أسامة التعليمية" class="logo animated fadeInDown">
+        <h1 class="animated fadeInDown">أكاديمية أسامة التعليمية</h1>
+    </header>
+
+    <div id="students-section" class="container animated fadeIn">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button class="btn btn-link nav-link" onclick="toggleSection('about')">معلومات عن الأكاديمية</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-link nav-link" onclick="toggleSection('why-us')">لماذا تختارنا</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-link nav-link" onclick="toggleSection('services')">خدماتنا</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-link nav-link" onclick="toggleSection('testimonials')">شهادات الطلاب</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-link nav-link" onclick="toggleSection('contact')">تواصل معنا</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-link nav-link" onclick="toggleSection('gallery')">معرض الأعمال السابقة</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-link nav-link" onclick="openFeedbackForm()">أعطنا رأيك</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <p class="instruction text-center mt-3">اضغط على الأزرار لعرض المعلومات</p>
+
+        <section id="about" class="container mt-4 hidden section-about">
+            <h2>معلومات عن الأكاديمية</h2>
+            <p>أكاديمية أسامة التعليمية للخدمات الطلابية هي مؤسسة تعليمية متميزة تهدف إلى تقديم خدمات تعليمية متكاملة تلبي جميع احتياجات الطلاب الأكاديمية. من خلال توفير حلول تعليمية شاملة تشمل المساعدة في إعداد المشاريع، كتابة البحوث، حل الواجبات، الإعداد للاختبارات، بالإضافة إلى تقديم شروحات ودروس تعليمية متخصصة. نسعى دائمًا لتحقيق أفضل النتائج لطلابنا من خلال تقديم الدعم الأكاديمي اللازم لضمان تحقيق أهدافهم التعليمية بكفاءة واحترافية.</p>
+            <h3>الرؤية:</h3>
+            <p>أن نصبح الأكاديمية الرائدة في تقديم الخدمات الطلابية التعليمية، وأن نكون الشريك الأكاديمي الموثوق للطلاب في مختلف المراحل الدراسية.</p>
+            <h3>المهمة:</h3>
+            <p>تقديم خدمات تعليمية شاملة ومتميزة تلبي احتياجات الطلاب الأكاديمية، من خلال فريق متخصص ومنهجيات تعليمية مبتكرة، لضمان تحقيق أفضل النتائج الأكاديمية.</p>
+        </section>
+
+        <section id="why-us" class="hidden container mt-4 section-why-us">
+            <h2>لماذا تختارنا</h2>
+            <ul>
+                <li>جودة عالية: نحن ملتزمون بتقديم خدمات تعليمية عالية الجودة باستخدام أحدث الأساليب والمناهج التعليمية.</li>
+                <li>فريق متخصص: يضم فريقنا نخبة من الخبراء والمتخصصين في مختلف المجالات الأكاديمية لضمان تقديم الدعم المطلوب بكفاءة واحترافية.</li>
+                <li>خدمات متنوعة: نقدم مجموعة واسعة من الخدمات التعليمية التي تغطي جميع احتياجات الطلاب الأكاديمية، مما يتيح لهم التركيز على النجاح الأكاديمي.</li>
+                <li>دعم مستمر: نحن هنا لدعم طلابنا في كل خطوة من مسيرتهم التعليمية، من خلال تقديم الاستشارات والنصائح الأكاديمية المتخصصة.</li>
+                <li>سهولة الوصول: نحرص على تقديم خدماتنا بطرق مرنة وسهلة الوصول، من خلال موقعنا الإلكتروني والتواصل الفوري مع فريق الدعم.</li>
+            </ul>
+        </section>
+
+        <section id="services" class="hidden container mt-4 section-services">
+            <h2>خدماتنا</h2>
+            <ul>
+                <li>إعداد المشاريع: نساعد الطلاب في إعداد مشاريعهم الأكاديمية بأعلى مستوى من الجودة والدقة. سواء كانت مشاريع فردية أو جماعية، نحن نضمن تقديم محتوى مبتكر ومتميز يتناسب مع متطلبات كل طالب.</li>
+                <li>كتابة البحوث: نقدم خدمات كتابة البحوث الأكاديمية في مختلف التخصصات والمجالات، مع التركيز على تقديم بحوث متميزة ومتوافقة مع المعايير الأكاديمية.</li>
+                <li>حل الواجبات: نقدم خدمات حل الواجبات الدراسية لضمان فهم الطلاب للمادة الدراسية بشكل أفضل، مما يساعدهم على تحقيق نتائج متميزة.</li>
+                <li>الإعداد للاختبارات: نساعد الطلاب في التحضير للاختبارات من خلال تقديم مواد تدريبية وشروحات تفصيلية تضمن استيعابهم الكامل للمناهج الدراسية.</li>
+                <li>الشروحات والدروس التعليمية: نقدم دروساً تعليمية وشروحات تفصيلية تغطي مختلف المواد الدراسية، مما يساعد الطلاب على تحسين مستواهم الأكاديمي وزيادة فهمهم للمناهج الدراسية.</li>
+                <li>خدمات التحرير والتدقيق: نقدم خدمات تحرير وتدقيق النصوص الأكاديمية لضمان خلوها من الأخطاء اللغوية والنحوية، وتقديمها بأفضل صورة ممكنة.</li>
+                <li>الاستشارات الأكاديمية: نقدم استشارات أكاديمية متخصصة لمساعدة الطلاب في تخطيط مسارهم الأكاديمي واختيار التخصصات المناسبة.</li>
+                <li>عمل تقارير: أسبوعية ، نهائية بطرق احترافية مضمونة ١٠٠%.</li>
+                <li>عمل سكليف/أعذار طبية: بأسعار رمزية مقبولة في كل الجامعات.</li>
+                <li>عمل سيرة ذاتية: بأي نظام كان وبأي تصميم تريده.</li>
+                <li>المساعدة في أي شيء تريده كان مذكوراً أعلاه أم لا، في الذهاب إلى قسم تواصل معنا واضغط على الواتس اب واسأل الذي تريده وسيتم الرد عليك سريعاً.</li>
+            </ul>
+        </section>
+
+        <section id="testimonials" class="hidden container mt-4 section-testimonials">
+            <h2>شهادات الطلاب</h2>
+            <div id="testimonials-list">
+                <div class="testimonial card mb-3">
+                    <div class="card-body">
+                        <p class="card-text">“أكاديمية أسامة ساعدتني في تحسين أدائي الأكاديمي بشكل كبير. شكراً لكم!” - أحمد</p>
+                    </div>
+                </div>
+                <div class="testimonial card mb-3">
+                    <div class="card-body">
+                        <p class="card-text">“خدمات الأكاديمية ممتازة وفريق الدعم متعاون جداً.” - فاطمة</p>
+                    </div>
+                </div>
+                <div class="testimonial card mb-3">
+                    <div class="card-body">
+                        <p class="card-text">“تجربة رائعة ودعم مستمر.” - علي</p>
+                    </div>
+                </div>
+                <div class="testimonial card mb-3">
+                    <div class="card-body">
+                        <p class="card-text">“تعلمت الكثير واستفدت من كل دقيقة.” - سارة</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="hidden container mt-4 section-contact">
+            <h2>تواصل معنا</h2>
+            <p>للتواصل عبر الواتساب: <a href="https://wa.me/message/IR63CBWWEEPFO1" class="contact-link">اضغط هنا</a></p>
+            <p>لمتابعة التحديثات، تابعنا على الانستغرام: <a href="https://www.instagram.com/0s1_m1academy?igshid=M3d0OTlhbWdkdWQ5" class="contact-link">اضغط هنا</a></p>
+        </section>
+        
+        <section id="gallery" class="hidden container mt-4 section-gallery">
+            <h2>معرض الأعمال السابقة</h2>
+            <div class="row text-center">
+                <div class="col-md-3 mb-4">
+                    <div class="gallery-item bg-light p-4 rounded" onclick="showStudentChatsGallery()">
+                        <h3>محادثات الطلاب</h3>
+                        <p>محادثات الطلاب التي تعبر عن سعادتهم بأعمالنا</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="gallery-item bg-light p-4 rounded" onclick="showReportsGallery()">
+                        <h3>تقاريرنا</h3>
+                        <p>أمثلة على بعض التقارير التي قمنا بإعدادها</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="gallery-item bg-light p-4 rounded" onclick="showProjectsGallery()">
+                        <h3>مشاريعنا</h3>
+                        <p>أمثلة على بعض المشاريع التي عملنا عليها</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="gallery-item bg-light p-4 rounded" onclick="showPresentationsGallery()">
+                        <h3>عروضنا التقديمية</h3>
+                        <p>أمثلة على بعض العروض التقديمية التي أعددناها</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="student-chats-gallery" class="hidden container mt-4">
+            <h2>محادثات الطلاب التي تعبر عن سعادتهم بأعمالنا</h2>
+            <div class="row">
+                <!-- Add 30 images here -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image1.jpeg" data-lightbox="student-chats">
+                        <img src="work/image1.jpeg" class="img-fluid rounded" alt="صورة 1">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image2.jpeg" data-lightbox="student-chats">
+                        <img src="work/image2.jpeg" class="img-fluid rounded" alt="صورة 2">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image3.jpeg" data-lightbox="student-chats">
+                        <img src="work/image3.jpeg" class="img-fluid rounded" alt="صورة 3">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image4.jpeg" data-lightbox="student-chats">
+                        <img src="work/image4.jpeg" class="img-fluid rounded" alt="صورة 4">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image5.jpeg" data-lightbox="student-chats">
+                        <img src="work/image5.jpeg" class="img-fluid rounded" alt="صورة 5">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image6.jpeg" data-lightbox="student-chats">
+                        <img src="work/image6.jpeg" class="img-fluid rounded" alt="صورة 6">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image7.jpeg" data-lightbox="student-chats">
+                        <img src="work/image7.jpeg" class="img-fluid rounded" alt="صورة 7">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image8.jpeg" data-lightbox="student-chats">
+                        <img src="work/image8.jpeg" class="img-fluid rounded" alt="صورة 8">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image9.jpeg" data-lightbox="student-chats">
+                        <img src="work/image9.jpeg" class="img-fluid rounded" alt="صورة 9">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image10.jpeg" data-lightbox="student-chats">
+                        <img src="work/image10.jpeg" class="img-fluid rounded" alt="صورة 10">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image11.jpeg" data-lightbox="student-chats">
+                        <img src="work/image11.jpeg" class="img-fluid rounded" alt="صورة 11">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image12.jpeg" data-lightbox="student-chats">
+                        <img src="work/image12.jpeg" class="img-fluid rounded" alt="صورة 12">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image13.jpeg" data-lightbox="student-chats">
+                        <img src="work/image13.jpeg" class="img-fluid rounded" alt="صورة 13">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image14.jpeg" data-lightbox="student-chats">
+                        <img src="work/image14.jpeg" class="img-fluid rounded" alt="صورة 14">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image15.jpeg" data-lightbox="student-chats">
+                        <img src="work/image15.jpeg" class="img-fluid rounded" alt="صورة 15">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image16.jpeg" data-lightbox="student-chats">
+                        <img src="work/image16.jpeg" class="img-fluid rounded" alt="صورة 16">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image17.jpeg" data-lightbox="student-chats">
+                        <img src="work/image17.jpeg" class="img-fluid rounded" alt="صورة 17">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image18.jpeg" data-lightbox="student-chats">
+                        <img src="work/image18.jpeg" class="img-fluid rounded" alt="صورة 18">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image19.jpeg" data-lightbox="student-chats">
+                        <img src="work/image19.jpeg" class="img-fluid rounded" alt="صورة 19">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image20.jpeg" data-lightbox="student-chats">
+                        <img src="work/image20.jpeg" class="img-fluid rounded" alt="صورة 20">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image21.jpeg" data-lightbox="student-chats">
+                        <img src="work/image21.jpeg" class="img-fluid rounded" alt="صورة 21">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image22.jpeg" data-lightbox="student-chats">
+                        <img src="work/image22.jpeg" class="img-fluid rounded" alt="صورة 22">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image23.jpeg" data-lightbox="student-chats">
+                        <img src="work/image23.jpeg" class="img-fluid rounded" alt="صورة 23">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image24.jpeg" data-lightbox="student-chats">
+                        <img src="work/image24.jpeg" class="img-fluid rounded" alt="صورة 24">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image25.jpeg" data-lightbox="student-chats">
+                        <img src="work/image25.jpeg" class="img-fluid rounded" alt="صورة 25">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image26.jpeg" data-lightbox="student-chats">
+                        <img src="work/image26.jpeg" class="img-fluid rounded" alt="صورة 26">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image27.jpeg" data-lightbox="student-chats">
+                        <img src="work/image27.jpeg" class="img-fluid rounded" alt="صورة 27">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image28.jpeg" data-lightbox="student-chats">
+                        <img src="work/image28.jpeg" class="img-fluid rounded" alt="صورة 28">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image29.jpeg" data-lightbox="student-chats">
+                        <img src="work/image29.jpeg" class="img-fluid rounded" alt="صورة 29">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="work/image30.jpeg" data-lightbox="student-chats">
+                        <img src="work/image30.jpeg" class="img-fluid rounded" alt="صورة 30">
+                    </a>
+                </div>
+            </div>
+            <button class="btn btn-dark mt-4 fixed-button" onclick="showGallery()">العودة للمعرض</button>
+        </section>
+
+        <section id="reports-gallery" class="hidden container mt-4">
+            <h2>أمثلة على بعض التقارير التي قمنا بإعدادها</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="reports/report1.pdf" target="_blank" class="btn btn-primary">عرض التقرير 1</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="reports/report2.pdf" target="_blank" class="btn btn-primary">عرض التقرير 2</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="reports/report3.pdf" target="_blank" class="btn btn-primary">عرض التقرير 3</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="reports/report4.pdf" target="_blank" class="btn btn-primary">عرض التقرير 4</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="reports/report5.pdf" target="_blank" class="btn btn-primary">عرض التقرير 5</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="reports/report6.pdf" target="_blank" class="btn btn-primary">عرض التقرير 6</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="reports/report7.pdf" target="_blank" class="btn btn-primary">عرض التقرير 7</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="reports/report8.pdf" target="_blank" class="btn btn-primary">عرض التقرير 8</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="reports/report9.pdf" target="_blank" class="btn btn-primary">عرض التقرير 9</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="reports/report10.pdf" target="_blank" class="btn btn-primary">عرض التقرير 10</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="reports/report11.pdf" target="_blank" class="btn btn-primary">عرض التقرير 11</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="reports/report12.pdf" target="_blank" class="btn btn-primary">عرض التقرير 12</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="reports/report13.pdf" target="_blank" class="btn btn-primary">عرض التقرير 13</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="reports/report14.pdf" target="_blank" class="btn btn-primary">عرض التقرير 14</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="reports/report15.pdf" target="_blank" class="btn btn-primary">عرض التقرير 15</a>
+                </div>
+            </div>
+            <button class="btn btn-dark mt-4 fixed-button" onclick="showGallery()">العودة للمعرض</button>
+        </section>
+
+        <section id="projects-gallery" class="hidden container mt-4">
+            <h2>أمثلة على بعض المشاريع التي عملنا عليها</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="projects/project1.pdf" target="_blank" class="btn btn-primary">عرض المشروع 1</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="projects/project2.pdf" target="_blank" class="btn btn-primary">عرض المشروع 2</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="projects/project3.pdf" target="_blank" class="btn btn-primary">عرض المشروع 3</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="projects/project4.pdf" target="_blank" class="btn btn-primary">عرض المشروع 4</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="projects/project5.pdf" target="_blank" class="btn btn-primary">عرض المشروع 5</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="projects/project6.pdf" target="_blank" class="btn btn-primary">عرض المشروع 6</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="projects/project7.pdf" target="_blank" class="btn btn-primary">عرض المشروع 7</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="projects/project8.pdf" target="_blank" class="btn btn-primary">عرض المشروع 8</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="projects/project9.pdf" target="_blank" class="btn btn-primary">عرض المشروع 9</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="projects/project10.pdf" target="_blank" class="btn btn-primary">عرض المشروع 10</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="projects/project11.pdf" target="_blank" class="btn btn-primary">عرض المشروع 11</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="projects/project12.pdf" target="_blank" class="btn btn-primary">عرض المشروع 12</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="projects/project13.pdf" target="_blank" class="btn btn-primary">عرض المشروع 13</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="projects/project14.pdf" target="_blank" class="btn btn-primary">عرض المشروع 14</a>
+                </div>
+            </div>
+            <button class="btn btn-dark mt-4 fixed-button" onclick="showGallery()">العودة للمعرض</button>
+        </section>
+
+        <section id="presentations-gallery" class="hidden container mt-4">
+            <h2>أمثلة على بعض العروض التقديمية التي أعددناها</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="presentations/presentation1.pptx" target="_blank" class="btn btn-primary">عرض العرض التقديمي 1</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="presentations/presentation1.pptx" target="_blank" class="btn btn-primary">عرض العرض التقديمي 1</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="presentations/presentation2.pptx" target="_blank" class="btn btn-primary">عرض العرض التقديمي 2</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="presentations/presentation3.pptx" target="_blank" class="btn btn-primary">عرض العرض التقديمي 3</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="presentations/presentation4.pptx" target="_blank" class="btn btn-primary">عرض العرض التقديمي 4</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="presentations/presentation5.pptx" target="_blank" class="btn btn-primary">عرض العرض التقديمي 5</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="presentations/presentation6.pptx" target="_blank" class="btn btn-primary">عرض العرض التقديمي 6</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="presentations/presentation7.pptx" target="_blank" class="btn btn-primary">عرض العرض التقديمي 7</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="presentations/presentation8.pptx" target="_blank" class="btn btn-primary">عرض العرض التقديمي 8</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="presentations/presentation9.pptx" target="_blank" class="btn btn-primary">عرض العرض التقديمي 9</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="presentations/presentation10.pptx" target="_blank" class="btn btn-primary">عرض العرض التقديمي 10</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="presentations/presentation11.pptx" target="_blank" class="btn btn-primary">عرض العرض التقديمي 11</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="presentations/presentation12.pptx" target="_blank" class="btn btn-primary">عرض العرض التقديمي 12</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="presentations/presentation13.pptx" target="_blank" class="btn btn-primary">عرض العرض التقديمي 13</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="presentations/presentation14.pptx" target="_blank" class="btn btn-primary">عرض العرض التقديمي 14</a>
+                </div>
+            </div>
+            <button class="btn btn-dark mt-4 fixed-button" onclick="showGallery()">العودة للمعرض</button>
+        </section>
+    </div>
+
+    <div id="feedback-form" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeFeedbackForm()">&times;</span>
+            <h2>أعطنا رأيك</h2>
+            <form id="feedback-form-content" onsubmit="submitFeedback(event)">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+                <label for="feedback">رأيك:</label>
+                <textarea id="feedback" name="feedback" class="form-control" required></textarea>
+                <button type="submit" class="btn btn-primary mt-2">إرسال</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="feedback-alert" class="alert alert-success hidden" role="alert">
+        تم إرسال رأيك بنجاح!
+    </div>
+
+    <button class="btn btn-dark fixed-bottom mb-5 ml-3" id="go-back-button-students" onclick="goBack()">العودة للاختيار</button>
+    <button class="btn btn-dark fixed-bottom mb-3 ml-3" id="back-to-top"><i class="fas fa-arrow-up"></i> الرجوع إلى الأعلى</button>
+</body>
+
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 أكاديمية أسامة التعليمية. جميع الحقوق محفوظة.</p>
+</footer>
+
+<script>
+    function toggleSection(id) {
+        document.querySelectorAll('section').forEach(section => {
+            if (section.id === id) {
+                section.classList.remove('hidden');
+                section.style.display = 'block';
+                $('html, body').animate({ scrollTop: $('#' + id).offset().top }, 500);
+                if (id.includes('gallery') || id.includes('presentation')) {
+                    document.querySelectorAll('.fixed-button').forEach(button => button.classList.add('visible'));
+                    document.getElementById('go-back-button-students').classList.remove('visible');
+                } else {
+                    document.querySelectorAll('.fixed-button').forEach(button => button.classList.remove('visible'));
+                    document.getElementById('go-back-button-students').classList.add('visible');
+                }
+            } else {
+                section.classList.add('hidden');
+                section.style.display = 'none';
+            }
+        });
+    }
+
+    function openFeedbackForm() {
+        document.getElementById('feedback-form').classList.remove('hidden');
+        document.getElementById('feedback-form').style.display = 'block';
+    }
+
+    function closeFeedbackForm() {
+        document.getElementById('feedback-form').classList.add('hidden');
+        document.getElementById('feedback-form').style.display = 'none';
+    }
+
+    function submitFeedback(event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        const feedback = document.getElementById('feedback').value;
+        const testimonialsList = document.getElementById('testimonials-list');
+
+        const newTestimonial = document.createElement('div');
+        newTestimonial.classList.add('testimonial', 'card', 'mb-3');
+        newTestimonial.innerHTML = `<div class="card-body"><p class="card-text">“${feedback}” - ${name}</p></div>`;
+
+        testimonialsList.appendChild(newTestimonial);
+        closeFeedbackForm();
+
+        const alert = document.getElementById('feedback-alert');
+        alert.classList.remove('hidden');
+        alert.style.display = 'block';
+        setTimeout(() => {
+            alert.classList.add('hidden');
+            alert.style.display = 'none';
+        }, 3000);
+    }
+
+    function showStudentChatsGallery() {
+        toggleSection('student-chats-gallery');
+    }
+
+    function showReportsGallery() {
+        toggleSection('reports-gallery');
+    }
+
+    function showProjectsGallery() {
+        toggleSection('projects-gallery');
+    }
+
+    function showPresentationsGallery() {
+        toggleSection('presentations-gallery');
+    }
+
+    function showGallery() {
+        toggleSection('gallery');
+    }
+
+    function goBack() {
+        window.location.href = 'index.html';
+    }
+
+    window.onload = function() {
+        const sections = ['about', 'why-us', 'services', 'testimonials', 'contact', 'gallery', 'student-chats-gallery', 'reports-gallery', 'projects-gallery', 'presentations-gallery'];
+        sections.forEach(section => document.getElementById(section).classList.add('hidden'));
+    }
+
+    window.onscroll = function() {
+        const button = document.getElementById('back-to-top');
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+    document.getElementById('back-to-top').addEventListener('click', scrollToTop);
+</script>
+</html>

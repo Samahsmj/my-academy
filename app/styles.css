@@ -1,0 +1,256 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    direction: rtl;
+    text-align: right;
+}
+
+header .logo {
+    width: 100px;
+}
+
+h2, h3, p, ul, li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+#main-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.instruction {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+
+.section-about,
+.section-why-us,
+.section-services,
+.section-testimonials,
+.section-contact,
+.section-gallery,
+.section-why-us-specialist,
+.section-skills-wanted,
+.section-specialist-testimonials,
+.section-contact-specialist {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    h2, h3, p, ul, li {
+        font-size: 1rem;
+        margin: 8px 0;
+    }
+
+    .instruction {
+        font-size: 1rem;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    #back-to-top,
+    #back-to-choose {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery-item {
+        margin-bottom: 20px;
+    }
+
+    .gallery-item h3 {
+        font-size: 1rem;
+    }
+
+    .gallery-item p {
+        font-size: 0.9rem;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#back-to-top,
+#back-to-choose {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* يظهر فقط عند التمرير */
+    margin-left: 10px;
+}
+
+#back-to-top:hover,
+#back-to-choose:hover {
+    background-color: #555;
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    border-left: 4px solid #333;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.gallery-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.img-fluid {
+    transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.1);
+}
+
+.fixed-button {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.fixed-button.visible {
+    display: block;
+}
+
+.fixed-button + .fixed-button {
+    margin-top: 10px;
+}
+
+#students-section,
+#specialists-section {
+    min-height: 100vh;
+    padding-bottom: 50px; /* To ensure content is not hidden behind the footer */
+}
+
+#gallery-section {
+    padding-bottom: 50px; /* To ensure content is not hidden behind the footer */
+}
+
+#student-chats-gallery .col-md-4, #reports-gallery .col-md-4, #projects-gallery .col-md-4, #presentations-gallery .col-md-4 {
+    margin-bottom: 15px;
+}
