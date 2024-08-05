@@ -2,12 +2,12 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-// Serve the static files from the "public" directory
-app.use(express.static(path.join(__dirname, 'public')));
+// Serve the static files from the "app" directory
+app.use(express.static(path.join(__dirname, 'app')));
 
 // Route all other requests to the index.html file
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'app', 'index.html'));
 });
 
 // Start the server on the specified port or default to port 5000
