@@ -83,6 +83,10 @@ h2, h3, p, ul, li {
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -121,23 +125,7 @@ h2, h3, p, ul, li {
     .section-contact-specialist {
         padding: 15px;
         margin: 5px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .section-about > *,
-    .section-why-us > *,
-    .section-services > *,
-    .section-testimonials > *,
-    .section-contact > *,
-    .section-gallery > *,
-    .section-why-us-specialist > *,
-    .section-skills-wanted > *,
-    .section-specialist-testimonials > *,
-    .section-contact-specialist > * {
         width: 100%;
-        margin: 5px 0;
     }
 
     #main-buttons {
@@ -185,23 +173,7 @@ h2, h3, p, ul, li {
     .section-contact-specialist {
         padding: 10px;
         margin: 5px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .section-about > *,
-    .section-why-us > *,
-    .section-services > *,
-    .section-testimonials > *,
-    .section-contact > *,
-    .section-gallery > *,
-    .section-why-us-specialist > *,
-    .section-skills-wanted > *,
-    .section-specialist-testimonials > *,
-    .section-contact-specialist > * {
         width: 100%;
-        margin: 5px 0;
     }
 
     #main-buttons {
