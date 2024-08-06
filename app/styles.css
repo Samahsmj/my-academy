@@ -83,10 +83,6 @@ h2, h3, p, ul, li {
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -112,72 +108,19 @@ h2, h3, p, ul, li {
         bottom: 10px;
         right: 10px;
     }
-
-    .section-about,
-    .section-why-us,
-    .section-services,
-    .section-testimonials,
-    .section-contact,
-    .section-gallery,
-    .section-why-us-specialist,
-    .section-skills-wanted,
-    .section-specialist-testimonials,
-    .section-contact-specialist {
-        padding: 15px;
-        margin: 5px;
-        width: 100%;
-    }
-
-    #main-buttons {
-        height: auto;
-        padding: 20px 0;
-    }
 }
 
 @media (max-width: 576px) {
-    h2, h3, p, ul, li {
-        font-size: 0.9rem;
-        margin: 5px 0;
-    }
-
-    .instruction {
-        font-size: 0.9rem;
-    }
-
     .gallery-item {
         margin-bottom: 20px;
     }
 
     .gallery-item h3 {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .gallery-item p {
-        font-size: 0.8rem;
-    }
-
-    .modal-content {
-        width: 95%;
-        padding: 15px;
-    }
-
-    .section-about,
-    .section-why-us,
-    .section-services,
-    .section-testimonials,
-    .section-contact,
-    .section-gallery,
-    .section-why-us-specialist,
-    .section-skills-wanted,
-    .section-specialist-testimonials,
-    .section-contact-specialist {
-        padding: 10px;
-        margin: 5px;
-        width: 100%;
-    }
-
-    #main-buttons {
-        padding: 15px 0;
+        font-size: 0.9rem;
     }
 }
 
@@ -308,9 +251,6 @@ footer {
     padding-bottom: 50px; /* To ensure content is not hidden behind the footer */
 }
 
-#student-chats-gallery .col-md-4,
-#reports-gallery .col-md-4,
-#projects-gallery .col-md-4,
-#presentations-gallery .col-md-4 {
+#student-chats-gallery .col-md-4, #reports-gallery .col-md-4, #projects-gallery .col-md-4, #presentations-gallery .col-md-4 {
     margin-bottom: 15px;
 }
